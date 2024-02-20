@@ -1,0 +1,642 @@
+/*************************************  general *******************************/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.display-none {
+  display: none;
+}
+.vert {
+  color: #868c4d;
+}
+.rouge {
+  color: rgb(231, 65, 43);
+}
+.beige {
+  color: beige;
+}
+.bg-beige {
+  background-color: beige;
+}
+.gris {
+  color: grey;
+}
+.flex-column-centre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-column-around {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-column-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-around {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*********************************************************  logo  **********************************/
+.logo-titre {
+  text-align: center;
+  font-family: "Allerta Stencil", sans-serif;
+  font-size: 3em;
+  color: #182609;
+}
+
+/*********************************************************  nav  ***********************************/
+nav {
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  background-color: #BFA68F;
+}
+nav > div {
+  height: 50px;
+}
+nav > div > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: larger;
+  color: white;
+  width: 20%;
+  height: 50px;
+}
+nav > div > a:hover {
+  cursor: pointer;
+  color: grey;
+  background-color: #252617;
+
+  color: white;
+}
+
+h2 {
+  margin: 0;
+}
+
+/************************************************** banniere accueil  *************************************/
+.image-banniere {
+  object-fit: cover;
+  width: 100%;
+  height: 70vh;
+}
+.far,
+.fas {
+  margin-right: 5px;
+}
+.garantie {
+  background-color: #182609;
+  color: white;
+  height: 100px;
+  width: 80%;
+  margin-top: -35px;
+  position: absolute;
+  box-shadow: 2px 5px 5px grey;
+}
+.size-lien-garantie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 70px;
+  padding-right: 20px;
+}
+.bordure-garantie {
+  border-right: 2px solid white;
+}
+
+/****************************************** page accueil, carte ,  page produit  ****************************/
+.selection {
+  margin-top: 70px;
+  font-family: "Kaushan Script", "cursive";
+}
+svg {
+  fill: #fecf39;
+}
+
+#blocCard {
+  margin-top: 50px;
+}
+.card {
+  margin: 30px;
+  background-color: beige;
+  border-radius: 20px;
+}
+.card-size {
+  width: 450px;
+  min-height: auto;
+}
+.titre-card {
+  text-align: center;
+  font-family: "Allerta Stencil", sans-serif;
+  height: 80px;
+  font-size: 2em;
+  color: rgb(231, 65, 43);
+}
+
+.image-size {
+  width: 400px;
+  height: 350px;
+}
+.bouton-chene {
+  background-color: rgb(231, 65, 43);
+  width: 120px;
+  height: 50px;
+  color: white;
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description-meuble {
+  text-align: center;
+  margin: 20px;
+  width: 90%;
+}
+.bouton-details {
+  box-shadow: 0;
+  border-radius: 10px;
+  font-size: 1em;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(231, 65, 43);
+  color: beige;
+  cursor: pointer;
+}
+.bouton-details:hover {
+  color: white;
+  background-color: #868c4d;
+}
+
+/****************************************************  footer  ****************************************/
+footer {
+  margin-top: 50px;
+  min-height: auto;
+  background-color: beige;
+}
+.titre-reseau {
+  margin-top: 20px;
+  font-size: xx-large;
+  font-family: "Allerta Stencil", sans-serif;
+}
+.logos-reseau {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 40%;
+}
+.foot-logo {
+  color: rgb(231, 65, 43);
+}
+.bloc-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 10px;
+  min-height: 200px;
+  width: 220px;
+}
+div.bloc-footer > h2 {
+  font-size: xx-large;
+  font-weight: normal;
+  font-family: "Allerta Stencil", sans-serif;
+}
+div.lien-footer > a {
+  font-size: larger;
+  display: block;
+  text-decoration: none;
+  color: #868c4d;
+}
+.logos-paiement {
+  width: 250px;
+  height: auto;
+  margin-left: 20px;
+}
+/***************************************************** page produit **********************************/
+#spanQuantite {
+  position: absolute;
+  margin-top: -10px;
+  margin-right: -30px;
+  border-radius: 10px;
+  min-width: auto;
+  min-height: auto;
+  padding: 3px;
+  background-color: red;
+  color: white;
+}
+
+.div-list-deroulante {
+  width: 200px;
+  margin-bottom: 20px;
+}
+.bouton-acheter {
+  margin-bottom: 20px;
+}
+.card-size-produit {
+  width: 500px;
+  min-height: auto;
+}
+.titre-card-size {
+  height: auto;
+}
+select {
+  border: 3px solid #868c4d;
+  background-color: beige;
+  color: #868c4d;
+}
+/******************************************************** page panier **************************/
+#charriot {
+  text-decoration: none;
+}
+.size80 {
+  width: 80%;
+}
+
+#titre-panier {
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-family: "Allerta Stencil", sans-serif;
+}
+.trait-design-panier {
+  width: 7%;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(231, 65, 43);
+}
+#basket-fiche {
+  width: 85%;
+  align-items: flex-start;
+}
+#injectJs {
+  width: 60%;
+  margin-bottom: 20px;
+}
+#basketProduit {
+  width: 90%;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 16%), 0 2px 5px rgb(0 0 0 / 26%);
+  padding: 20px;
+}
+#blocImage {
+  width: 30%;
+}
+#blocImage > img {
+  width: 100%;
+  height: auto;
+}
+#blocProduit {
+  width: 30%;
+}
+#bloc-change-produit {
+  width: 35%;
+}
+.bouton-moins,
+.bouton-plus {
+  border: 1px solid rgba(231, 65, 43, 0.178);
+  background-color: white;
+  color: rgb(231, 65, 43);
+  font-size: xx-large;
+  width: 40px;
+  height: 50px;
+  cursor: pointer;
+}
+.produit-quantite {
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.267);
+  width: 50px;
+  height: 50px;
+}
+.bouton-corbeille:hover {
+  cursor: pointer;
+  color: red;
+}
+#basket-recap {
+  width: 30%;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 16%), 0 2px 5px rgb(0 0 0 / 26%);
+  padding: 20px;
+}
+.titre-recap {
+  font-size: xx-large;
+  font-weight: 400;
+  font-family: "Allerta Stencil", sans-serif;
+  line-height: 1.4em;
+}
+.trait-design {
+  width: 80%;
+  border-bottom: 2px solid rgb(231, 65, 43);
+}
+.continuer {
+  width: 80%;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 400;
+  font-family: "Allerta Stencil", sans-serif;
+  color: rgb(231, 65, 43);
+}
+#continueCommande {
+  text-decoration: none;
+  font-size: large;
+  width: 50%;
+  height: 50px;
+  background-color: rgb(231, 65, 43);
+  color: white;
+  border: rgb(231, 65, 43);
+  cursor: pointer;
+}
+#continueCommande:hover {
+  background-color: #868c4d;
+}
+/******************************************************** formulaire *******************************/
+
+form > h2,
+input {
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+form > div > div {
+  height: 150px;
+}
+form > div > div > label {
+  width: 70px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+#prenom {
+  margin-right: 20px;
+}
+.champ {
+  width: 300px;
+  height: 40px;
+  border: 1px solid #868c4d;
+  background-color: aliceblue;
+  appearance: none;
+}
+form > div > div > span {
+  width: 300px;
+  color: red;
+}
+.bouton-commande {
+  appearance: none;
+  font-size: larger;
+  width: 30%;
+  height: 50px;
+  background-color: rgb(231, 65, 43);
+  color: white;
+  border: rgb(231, 65, 43);
+  cursor: pointer;
+}
+.bouton-commande:hover {
+  color: white;
+  background-color: #868c4d;
+  cursor: pointer;
+}
+/************************************************  page commande *********************************/
+#injectCommande {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#titreCommande {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#basketCommande {
+  flex-wrap: nowrap;
+  width: 100vh;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 16%), 0 2px 5px rgb(0 0 0 / 26%);
+  padding: 20px;
+}
+.bloc-affiche-commande {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/**************************************************  responsive ***************************************/
+
+@media screen and (max-width: 1280px) {
+  /***************************** panier  */
+  #basket-fiche {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  /***************************** acceuil  */
+  .garantie {
+    justify-content: center;
+  }
+  .size-lien-garantie {
+    width: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /**************************** panier */
+  #basket-fiche {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+  }
+  #injectJs {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 980px) {
+  /***************************** accueil  */
+  .garantie {
+    width: 100%;
+  }
+  .size-lien-garantie {
+    width: 140px;
+  }
+  /**************************** panier */
+  #injectJs {
+    width: 90%;
+  }
+  #basket-recap {
+    width: 50%;
+  }
+  /************************** commande */
+  #blocTitrePanier > div > h3 {
+    width: 400px;
+    text-align: center;
+  }
+  #basketCommande {
+    width: 100%;
+    padding: 0;
+  }
+  #basketCommande > div {
+    padding: 10px;
+  }
+  .bloc-commandes {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 750px) {
+  /********************************** accueil  */
+  .garantie {
+    height: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .size-lien-garantie {
+    width: 240px;
+    height: 30px;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .bordure-garantie {
+    border-bottom: 2px solid white;
+    border-right: none;
+  }
+  .selection {
+    margin-top: 150px;
+  }
+  /********************************* panier */
+  #injectJs {
+    width: 100%;
+  }
+  #basketProduit {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #basket-fiche {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  #blocImage,
+  #blocProduit,
+  #bloc-change-produit {
+    width: 50%;
+  }
+  #basket-recap {
+    width: 80%;
+  }
+  /******************************* form */
+  .nom-prenom {
+    flex-direction: column;
+  }
+  #prenom {
+    margin-right: 0;
+  }
+  .bouton-commande {
+    width: 50%;
+  }
+  /******************** panier et commande */
+  .trait-design-panier {
+    width: 15%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /*********************************** nav  */
+  nav > div {
+    height: auto;
+    flex-direction: column;
+    flex-wrap: nowrap !important;
+  }
+  nav > div > a {
+    width: 100%;
+  }
+  /********************************** footer */
+  .bloc-footer {
+    min-height: auto;
+  }
+  /********************************* panier */
+  #blocImage,
+  #blocProduit,
+  #bloc-change-produit {
+    width: 70%;
+  }
+  /******************************* commande */
+  #blocTitrePanier > div > h3 {
+    width: 250px;
+    text-align: center;
+  }
+  .bloc-commandes {
+    width: 100%;
+  }
+  #basketCommande {
+    flex-wrap: wrap;
+  }
+  #basketCommande > div {
+    padding: 10px 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  /************************************* accueil carte produit  */
+  .size-lien-garantie {
+    width: 200px;
+  }
+  .card-size {
+    width: 100%;
+  }
+  .card {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 0;
+  }
+  .image-size {
+    width: 100%;
+    height: 250px;
+  }
+  /******************************* panier */
+  #blocImage,
+  #blocProduit,
+  #bloc-change-produit {
+    width: 90%;
+  }
+  #basket-recap {
+    width: 90%;
+    padding: 5%;
+  }
+  /******************************* form */
+  .champ,
+  form > div > div > span {
+    width: 250px;
+  }
+  form > div > div {
+    height: auto;
+    width: 90%;
+  }
+  .bouton-commande {
+    margin-top: 20px;
+  }
+}

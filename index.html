@@ -7,7 +7,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https : //fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="boxicons.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>LE COOR DU CHÊNE</title>
@@ -15,16 +14,16 @@
 <body>
     <section class="flex-around">
         <div class="logo">
-            <img src="./image/LOGO.jpg" alt="un chêne">
+            <img src="image/LOGO.jpg" width="100" alt="un chêne">
         </div>
         <h1 class="logo-titre">Brocantier
             <br>
             <span>LE COOR DU CHÊNE</span>
         </h1>
         <a id="chariot" href="#" class="flex-column-between">
-          <box-icon class="vert" name='cart-add'></box-icon>
+            <i class="fa-solid fa-cart-shopping fa-2x text-black"></i>
           <!-- <span id="spanQuantite"></span> -->
-          <P>Mon panier</P>  
+          <P class="text-decoration-none ">mon panier</P>  
         </a>
     </section>
 
@@ -38,7 +37,11 @@
     </nav>
 
     <section>
-        <div id="bannière">  <!-- <javascript injection banniere --> </div>
+        <div id="bannière">
+            <div class ="container-fluid image-bannière">
+                <img src="image/background.jpg" class="img-fluid "  alt="banniere du site"/>
+            </div>
+        </div>
         <div class="flex-centre">
             <div class="garantie flex-around">
              <h3 class="size-lien-garantie bordure-garantie">
@@ -63,11 +66,89 @@
             </div>
         </div>
     </section>
+    
     <div class="flex-column-centre">
         <h2 class="selection">sélection</h2>
         <img src="./image/LaurelBranch6.svg" alt="feuille de laurier">
-
     </div>
+
+    <div id="blocCard" class="flex-around">
+        <!-- javascript injeftion carte produit -->
+    </div>
+
+    <footer>
+        <section class="flex-column-centre">
+            <div class="flex-centre">
+                <h2 class="titre-reseau">
+                    La Communauté <br>
+                    "LE COOR DU CHÊNE"
+                </h2>
+            </div>
+            <div class="logos-reseau flex-around">
+                <a class="text-black" href="#"><i class="fa-brands fa-square-facebook fa-4x "></i></a>
+                <a class="text-black" href="#"><i class="fa-brands fa-square-instagram fa-4x"></i></a>
+                <a class="text-black" href="#"><i class="fa-brands fa-tiktok fa-4x"></i></a>
+            </div>
+        </section>
+
+        <section class="flex-around">
+            <div class="bloc-footer">
+                <h2>Informations</h2>
+            <div class="liens-footer d-flex flex-column">
+                <a class="text-black text-decoration-none" href="#">Nos services</a>
+                <a class="text-black text-decoration-none" href="#">Nos valeurs</a>
+                <a class="text-black text-decoration-none" href="#">Notre histoire</a>
+                <a class="text-black text-decoration-none" href="#">CGV</a>
+                <a class="text-black text-decoration-none" href="#">Questions fréquentes</a>
+            </div>  
+            </div>
+
+            <div class="bloc-footer">
+                <h2>Nos services</h2>
+            <div class="liens-footer d-flex flex-column">
+                <a class="text-black text-decoration-none" href="#">Paiement</a>
+                <a class="text-black text-decoration-none" href="#">Suivi de commande</a>
+                <a class="text-black text-decoration-none" href="#">Livraison</a>
+                <a class="text-black text-decoration-none" href="#">Conseils</a>
+                <a class="text-black text-decoration-none" href="#">Retour</a>
+                <a class="text-black text-decoration-none" href="#">Nous contacter</a>
+            </div>  
+            </div>
+
+            <div class="bloc-footer">
+                <h2>Catégories</h2>
+            <div class="liens-footer d-flex flex-column">
+                <a class="text-black text-decoration-none" href="#">Accueil</a>
+                <a class="text-black text-decoration-none" href="#">Commandes</a>
+                <a class="text-black text-decoration-none" href="#">Panier</a>
+                <a class="text-black text-decoration-none" href="#">Formulaire</a>
+            </div>  
+            </div>
+
+            <div class="bloc-footer">
+                <h2>Nos magasions</h2>
+            <div class="liens-footer d-flex flex-column">
+                <a class="text-black text-decoration-none" href="#">Paris</a>
+                <a class="text-black text-decoration-none" href="#">Toulon</a>
+                <a class="text-black text-decoration-none" href="#">Bordeaux</a>
+                <a class="text-black text-decoration-none" href="#">Lyon</a>
+            </div>  
+            </div>
+        </section>
+
+        <section class="flex-around">
+            <div>
+                <p>Mentions légales - Plan du site - Crédits</p>
+                <p>Brocantier "LE COOR DU CHÊNE" - 2024 - Tous droits réservés</p>
+            </div>
+            <div class="flex-around mb-5">
+                <p>Paiement sécurisé</p>
+                <img class="logo-paiement w-25" src="image/cb.png" alt="logo des cartes de paiements">
+            </div>
+
+        </section>
+    </footer>
+
     <script src="https://kit.fontawesome.com/95bbd46bb0.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
     <script src="index.js"></script>

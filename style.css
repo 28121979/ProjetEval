@@ -160,7 +160,7 @@ svg {
   font-family: "Allerta Stencil", sans-serif;
   height: 80px;
   font-size: 2em;
-  color: rgb(231, 65, 43);
+  color: #252617;
 }
 
 .image-size {
@@ -168,7 +168,7 @@ svg {
   height: 350px;
 }
 .bouton-chene {
-  background-color: rgb(231, 65, 43);
+  background-color: #868c4d;
   width: 120px;
   height: 50px;
   color: white;
@@ -188,8 +188,8 @@ svg {
   font-size: 1em;
   width: 100px;
   height: 40px;
-  background-color: rgb(231, 65, 43);
-  color: beige;
+  background-color: #60b63e;
+  color: white;
   cursor: pointer;
 }
 .bouton-details:hover {
@@ -201,7 +201,7 @@ svg {
 footer {
   margin-top: 50px;
   min-height: auto;
-  background-color: beige;
+  background-color: #BFA68F;
 }
 .titre-reseau {
   margin-top: 20px;
@@ -225,21 +225,17 @@ footer {
   width: 220px;
 }
 div.bloc-footer > h2 {
-  font-size: xx-large;
-  font-weight: normal;
+  font-size: x-large; ;
   font-family: "Allerta Stencil", sans-serif;
 }
-div.lien-footer > a {
-  font-size: larger;
-  display: block;
+/* div.lien-footer a {
   text-decoration: none;
-  color: #868c4d;
-}
-.logos-paiement {
-  width: 250px;
-  height: auto;
-  margin-left: 20px;
-}
+  color: black;
+} */
+/* .logos-paiement {
+  
+  margin-left: 1rem
+} */
 /***************************************************** page produit **********************************/
 #spanQuantite {
   position: absolute;

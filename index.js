@@ -50,6 +50,17 @@ const updateUI = () => {
 
              </div>`
         ).join(''); // Utilisez join('') pour transformer le tableau en chaîne de caractères
+
+        let boutons = document.querySelectorAll('.bouton-details');
+        console.log(boutons);
+
+        boutons.forEach(bouton => {
+            bouton.addEventListener('click', () => {
+                console.log(bouton);
+
+                window.location.href = `produit.html?id=${bouton.id}`
+            })
+        })
     }
 };
 

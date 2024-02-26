@@ -3,7 +3,7 @@
 
 // Extrait l'ID du produit de l'URL
 const urlParams = new URLSearchParams(window.location.search);
-const produitId = urlParams.get('id'); // Assurez-vous que l'URL contient ?id=XXX
+const produitId = urlParams.get('id'); 
 
 // Fonction pour récupérer les données du produit
 async function fetchProduit(produitId) {
@@ -56,6 +56,7 @@ function produitDisplay(produitData) {
 
         select.appendChild(tagOption);
     })
+    addBasket(produitData._id);
 }
 
 // Fonction principale pour orchestrer la récupération et l'affichage du produit
@@ -73,3 +74,58 @@ async function main() {
 }
 
 main(); // Exécution de la fonction principale
+
+// const addBasket = () => {
+//     let bouton = document.getElementById('btnAcheter');
+//     console.log(bouton);
+//     bouton.addEventListener('click', () => {
+//         let produitTableau = JSON.parse(localStorage.getItem('produit'));
+//         let select = document.getElementById('vernis');
+//         console.log(select.value);
+//         console.log(produitTableau.value);
+
+//         const fusionproduitTeinte = Object.assign{}, produitTableau {
+//             teinte: `${select.value}`,
+//             quantite: 1
+//         }
+            
+//         })
+
+//         if(produitTableau === null){
+//             produitTableau = [];
+//             produitTableau.push(produitId);
+//             console.log(produitTableau);
+//             localStorage.setItem('produit', JSON.stringify(produitTableau));
+//         }
+
+//     }
+
+const addBasket = () => {
+    let bouton = document.getElementById('btnAcheter');
+    bouton.addEventListener('click', () => {
+        let produitTableau = JSON.parse(localStorage.getItem('produit')) || [];
+        let select = document.getElementById('vernis');
+        
+        // Crée un objet pour le produit sélectionné avec teinte et quantité
+        const produitAajouter = {
+            id: produitId, // Assurez-vous que produitId est accessible dans cette portée
+            teinte: select.value,
+            quantite: 1
+        };
+        
+        // Recherche si le produit (même ID et teinte) existe déjà dans le tableau
+        const indexProduit = produitTableau.findIndex(produit => produit.id === produitAajouter.id && produit.teinte === produitAajouter.teinte);
+        
+        if(indexProduit !== -1) {
+            // Si le produit existe déjà, incrémente la quantité
+            produitTableau[indexProduit].quantite += 1;
+        } else {
+            // Sinon, ajoute le nouveau produit
+            produitTableau.push(produitAajouter);
+        }
+
+        localStorage.setItem('produit', JSON.stringify(produitTableau));
+    });
+};
+
+addBasket(); // N'oubliez pas d'appeler la fonction pour activer l'écouteur d'événements

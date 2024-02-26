@@ -36,9 +36,113 @@
        </div>
     </nav>
 
-    <div id="blocCard" class="flex-around">
-        <!-- javascript injeftion carte produit -->
-    </div>
+    <section id="basket" class="flex-column-centre">
+        <!-- titre panier -->
+        <div id="blocTitrePanie" class="flex-start size80">
+            <h2 id="titre-panier">VEUILLEZ AJOUTER VOS PRODUITS<br>PAS DE PRODUITS DANS VOTRE PANIER</h2>
+        </div>
+            <!-- fiche comolète carte + récapitulatif panier -->
+        <div id="basket-fiche" class="flex-around">
+            <!-- carte panier -->
+            <div id="injectJs">
+                <div class="flex-around shadow " id=" basketProduit">
+                <div id="blocImage">
+                    <i class="fa-solid fa-image fa-4x"></i>
+                </div>
+                <div id="blocProduit" class="flex-column-around ">
+                    <h2>Produit</h2>
+                    <p>vernis</p>
+                    <p>0 €</p>
+                    <p>Ref : 00000000</p>
+                    <P><i class="fa-solid fa-truck"></i>  en stock</P>
+                </div>
+                <div id="bloc-change-produits" class="flex-around">
+                    <!-- A MODIFIER POUR LE DESIGN  -->
+                    <div class="flex-centre">
+                        <button class="bouton-moins">-</button>
+                        <span class="produit-quantite">0</span>
+                        <button class="bouton-plus">+</button>
+                    </div>
+                    <div><p>0 €</p></div>
+                    <div><i class="fa-solid fa-trash-can"></i></div>
+                </div>
+                </div>
+            </div>
+            <!-- récapitulatif du panier -->
+            <div id="basket-recap">
+                <h2 class="titre-recap rouge">Récapitulatif</h2>
+                <div class="flex-around">
+                    <p id="nbArticle">0 article</p>
+                    <p id="prixArticle">0</p>
+                </div>
+                <div class="flex-around">
+                    <p>Livraison</p>
+                    <p id="prixLivraison">offert</p>
+                </div class="trait-design"><div>
+                    <div class="flex-around">
+                        <h3>Total TTC</h3>
+                        <p id="prixTtc">0</p>
+                    </div>
+                    <div>
+                        <a id="continueCommande" class="flex-around" href="">CONTINUER<i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                    <div>
+                        <p><i class="fa-solid fa-truck vert"></i>  Livraison sous 3 semaines</p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="flex-start size80">
+            <a class="continuer" href="index.html">
+                <i class="fa-solid fa-chevron-left"></i> CONTINUER MES ACHATS
+            </a>
+        </div>
+        <div class="container my-5 ">
+            <form id="signup" class="display-none" name="formValidate">
+                <h1>Informations Personnelles</h1>
+                <div class="form-field">
+                    <label for="name" class="form-label">Nom </label>
+               <input type="text" name="name" class="form-control" id="name" autocomplete="off">
+               <small></small>
+                   </div>
+                   <div class="form-field">
+                    <label for="firstname" class="form-label">Prénom</label>
+               <input type="text" name="firstname" class="form-control" id="firstname" autocomplete="off">
+               <small></small>
+                   </div>  
+                   <div class="form-field">
+                    <label for="email" class="form-label">Email:</label>
+               <input type="text" name="email" class="form-control" id="email" autocomplete="off">
+               <small></small>
+                   </div>
+                   <div class="form-field">
+                    <label for="adress" class="form-label">Adresse</label>
+               <input type="text" name="adress" class="form-control" id="adress" autocomplete="off">
+               <small></small>
+                   </div>
+                   <div class="form-field">
+                    <label for="town" class="form-label">Ville</label>
+               <input type="text" name="town" class="form-control" id="town" autocomplete="off">
+               <small></small>
+                   </div>
+                   <div class="form-field">
+                    <label for="password" class="form-label">Mot de passe</label>
+               <input type="password" name="password" class="form-control" id="password" autocomplete="off">
+               <span id="togglePassword" class="eye-icon">👁️</span>
+               <small></small>
+                   </div>
+                   <div class="form-field">
+                    <label for="confirmpassword" class="form-label">Confirmer votre mot de passe</label>
+               <input type="password" name="confirmpassword" class="form-control" id="confirmpassword" autocomplete="off">
+               <small></small>
+                   </div>
+                <div class="text-center mt-3">
+                    <button type="submit" class="btn btn-primary">Commander</button>
+                </div>
+            </form>
+    
+        </div>
+    </section>
 
     <footer>
         <section class="flex-column-centre">
@@ -115,6 +219,6 @@
 
     <script src="https://kit.fontawesome.com/95bbd46bb0.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
-    <script src="produit.js"></script>
+    <script src="panier.js"></script>
 </body>
 </html>

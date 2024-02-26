@@ -300,7 +300,7 @@ select {
 #basketProduit {
   width: 90%;
   margin-bottom: 10px;
-  box-shadow: 0 2px 10px rgb(0 0 0 / 16%), 0 2px 5px rgb(0 0 0 / 26%);
+  box-shadow: 0 px 10px rgb(0 0 0 / 16%), 0 2px 5px rgb(0 0 0 / 26%);
   padding: 20px;
 }
 #blocImage {
@@ -349,10 +349,11 @@ select {
   font-weight: 400;
   font-family: "Allerta Stencil", sans-serif;
   line-height: 1.4em;
+  color: #BFA68F;
 }
 .trait-design {
   width: 80%;
-  border-bottom: 2px solid rgb(231, 65, 43);
+  border-bottom: 2px solid #BFA68F;
 }
 .continuer {
   width: 80%;
@@ -367,7 +368,7 @@ select {
   font-size: large;
   width: 50%;
   height: 50px;
-  background-color: rgb(231, 65, 43);
+  background-color: #BFA68F;
   color: white;
   border: rgb(231, 65, 43);
   cursor: pointer;
@@ -377,7 +378,7 @@ select {
 }
 /******************************************************** formulaire *******************************/
 
-form > h2,
+/* form > h2,
 input {
   margin-bottom: 5px;
   margin-top: 20px;
@@ -418,7 +419,101 @@ form > div > div > span {
   color: white;
   background-color: #868c4d;
   cursor: pointer;
+} */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 600px;
 }
+
+.display-none {
+  display: none;
+}
+
+
+.form {
+  padding: 10px 20px;
+}
+
+.form h1 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.form-field {
+  margin-bottom: 5px;
+
+}
+
+.form-field label {
+  display: block;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.form-field input, .form-field select {
+  border: solid 2px #f0f0f0;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  display: block;
+  width: 100%;
+}
+
+.form-field input:focus, .form-field select:focus {
+  outline: none;
+}
+
+.form-field.error input {
+  border-color: var(--error-color);
+}
+.form-field.error select {
+border : 2px solid var(--error-color);
+}
+
+.form-field.success input {
+  border-color: var(--success-color);
+}
+.form-field.success select {
+border : 2px solid var(--success-color);
+}
+
+
+.form-field small {
+  color: var(--error-color);
+}
+
+
+/* button */
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.form-field.password {
+  position: relative;
+}
+
+.eye-icon {
+  position: relative;
+  left: 94%;
+  top: -40px;
+  cursor: pointer;
+}
+
 /************************************************  page commande *********************************/
 #injectCommande {
   width: 100%;

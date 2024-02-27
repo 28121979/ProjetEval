@@ -281,7 +281,7 @@ select {
   margin-top: 20px;
   margin-bottom: 20px;
   font-weight: 400;
-  font-family: "Allerta Stencil", sans-serif;
+  font-family: "Kaushan Script", sans-serif;
 }
 .trait-design-panier {
   width: 7%;
@@ -641,7 +641,7 @@ border : 2px solid var(--success-color);
     width: 80%;
   }
   /******************************* form */
-  .nom-prenom {
+  /* .nom-prenom {
     flex-direction: column;
   }
   #prenom {
@@ -649,7 +649,7 @@ border : 2px solid var(--success-color);
   }
   .bouton-commande {
     width: 50%;
-  }
+  } */
   /******************** panier et commande */
   .trait-design-panier {
     width: 15%;
@@ -719,7 +719,7 @@ border : 2px solid var(--success-color);
     padding: 5%;
   }
   /******************************* form */
-  .champ,
+  /* .champ,
   form > div > div > span {
     width: 250px;
   }
@@ -730,4 +730,4 @@ border : 2px solid var(--success-color);
   .bouton-commande {
     margin-top: 20px;
   }
-}
+} */

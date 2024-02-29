@@ -56,7 +56,7 @@ const updateUI = () => {
 
         boutons.forEach(bouton => {
             bouton.addEventListener('click', () => {
-                console.log(bouton);
+               
 
                 window.location.href = `produit.html?id=${bouton.id}`
             })

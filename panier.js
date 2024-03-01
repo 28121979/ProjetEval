@@ -409,14 +409,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="col-3 d-flex justify-content-center align-items-center">
                         <div class="d-flex align-items-center">
-                            <button class="btn btn-secondary bouton-moins">-</button>
+                            <button class="btn btn-secondary bouton-moins" data-id="${produit._id} data-teinte ${produit.teinte}">-</button>
                             <span class="mx-2 produit-quantite">${quantite}</span>
-                            <button class="btn btn-secondary bouton-plus">+</button>
+                            <button class="btn btn-secondary bouton-plus" data-id="${produit._id} data-teinte ${produit.teinte}">+</button>
                         </div>
                     </div>
                     <div class="col-2 pt-5 d-flex justify-content-center align-items-center">
                         <div>
-                            <p>${prixTotal} € <i class="fa-solid fa-trash-can" onclick="supprimerProduit('${produit._id}')"></i></p>
+                            <p class="prix-total-quantite>${prixTotal} € <i class="fa-solid fa-trash-can" onclick="supprimerProduit('${produit._id}')"></i></p>
                         </div>
                     </div>
                 </div>

@@ -41,7 +41,7 @@ const updateUI = () => {
         blocCard.innerHTML = meubleData.map((meuble) =>
             `<div id="card${meuble._id}" class="flex-around card col-12 col-md-6 col-lg-4 col-xl-3 my-3 mx-3">
                 <h3 class="titre-card">${meuble.name .toUpperCase()}</h3>
-                <img class="image-size" src="${meuble.imageUrl}" alt="photo de meuble ${meuble.name}"/>
+                <img class="img-fluid" src="${meuble.imageUrl}" alt="photo de meuble ${meuble.name}"/>
                 <div class="bouton-chene">CHÊNE</div>
                 <p class="description-meuble">${meuble.description}</p>
                 <button id="${meuble._id}" class="bouton-details">Voir</button>

@@ -105,9 +105,12 @@ h2 {
 
 /************************************************** banniere accueil  *************************************/
 .image-banniere {
-  object-fit: cover;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  height: 70vh;
+  min-height: 50vh;
 }
 .far,
 .fas {
@@ -310,9 +313,9 @@ select {
   width: 100%;
   height: auto;
 }
-#blocProduit {
+/* #blocProduit {
   width: 30%;
-}
+} */
 #bloc-change-produit {
   width: 35%;
 }

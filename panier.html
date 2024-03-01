@@ -32,119 +32,136 @@
         <a href="index.html">MEUBLE</a>
         <a href="#">COMMANDE</a>
         <a href="#">CONTACT</a>
-        <a href="panier.html">PANIER</a>
+        <a href="panier.html ">PANIER</a>
        </div>
     </nav>
 
-    <section id="basket" class="flex-column-centre">
-        <!-- titre panier -->
-        <div id="blocTitrePanier" class="flex-start size80">
-            <h2 id="titre-panier">VEUILLEZ AJOUTER VOS PRODUITS<br>PAS DE PRODUITS DANS VOTRE PANIER</h2>
-        </div>
-            <!-- fiche comolète carte + récapitulatif panier -->
-        <div id="basket-fiche" class="flex-around">
-            <!-- carte panier -->
-            <div id="injectJs">
-                <div class="flex-around shadow " id=" basketProduit">
-                <div id="blocImage">
-                    <i class="fa-solid fa-image fa-4x"></i>
-                </div>
-                <div id="blocProduit" class="flex-column-around ">
+  <section id="basket" class="flex-column-centre">
+    <!-- titre panier -->
+    <div id="blocTitrePanier" class="flex-start size 80">
+     <H2 id ="titre-panier">
+        Veuillez ajouter des produits <br>
+        Panier vide
+     </H2>
+    </div>
+    <!-- fiche complete carte+ récapitulatif panier -->
+    <div id="basket-fiche" class="flex-around">
+        <!-- carte panier -->
+        <div id="injectJs">
+            <div class="row shadow "> 
+                <div class="col-3 d-flex justify-content-center">
+                    <div id="blocImage">
+                        <img src="image/LaurelBranch6.svg" alt="image de feuilles"/>
+                    </div>       
+            </div>
+            <div class="col-3">
+                <div id="blockProduit" class="flex-column-around">
                     <h2>Produit</h2>
                     <p>vernis</p>
-                    <p>0 €</p>
-                    <p>Ref : 00000000</p>
+                    <p> 0 €</p>
+                    <p>Ref 000000000</p>
                     <P><i class="fa-solid fa-truck"></i>  en stock</P>
                 </div>
-                <div id="bloc-change-produits" class="flex-around">
-                    <!-- A MODIFIER POUR LE DESIGN  -->
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+                <div id="bloc-change-produit" class="flex-around">
                     <div class="flex-centre">
                         <button class="bouton-moins">-</button>
                         <span class="produit-quantite">0</span>
                         <button class="bouton-plus">+</button>
                     </div>
-                    <div><p>0 €</p></div>
-                    <div><i class="fa-solid fa-trash-can"></i></div>
+                    </div>
                 </div>
+                    <div class="col-3 pt-5 ">
+                        <div class="pt-5 "><p>0 €
+                            <i class="fa-solid fa-trash-can"></i></p></div>
+                    </div>
+            </div>
+            <div id="basketProduit" class="flex-around">
+
+            </div>
+           
+        </div>
+        <!-- récapitulatif -->
+        <div id="basket-recap">
+            <h2 class="titre-recap">Récapitulatif</h2>
+            <div class="flex-around">
+                <p id="nbArticle">0 article</p>
+                <p id="prixArticle">0</p>
+            </div>
+            <div class="flex-around">
+                <p>Livraison</p>
+                <p id="prixLivraison">offet</p>
+            </div>
+            <div class="trait-design"></div>
+            <div>
+                <div class="row ">      
+                <h4 class="col-6">Total TTC</h4>
+                <p id="prixTtc" class="col-6 d-flex justify-content-center">0</p>
+                </div>
+                <div class="row ">
+                <a id="continueCommande" class="flex-around" href="#">Continuer<i class="fa-solid fa-chevron-right"></i></a>
                 </div>
             </div>
-            <!-- récapitulatif du panier -->
-            <div id="basket-recap">
-                <h2 class="titre-recap rouge">Récapitulatif</h2>
-                <div class="flex-around">
-                    <p id="nbArticle">0 article</p>
-                    <p id="prixArticle">0</p>
-                </div>
-                <div class="flex-around">
-                    <p>Livraison</p>
-                    <p id="prixLivraison">offert</p>
-                </div class="trait-design"><div>
-                    <div class="flex-around">
-                        <h3>Total TTC</h3>
-                        <p id="prixTtc">0</p>
-                    </div>
-                    <div>
-                        <button id="continueCommande" class="flex-around" >CONTINUER<i class="fa-solid fa-chevron-right"></i></button>
-                       
+            <div>
+                <p><i class="fa-solid fa-truck"></i> Livraison sous 3 semaines</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex-start size80">
+        <a class="continuer" href="index.html">
+        <i class="fa-solid fa-chevron-left"></i> CONTINUER MES ACHATS</a>
+   </div>
 
-                    </div>
-                    <div>
-                        <p><i class="fa-solid fa-truck vert"></i>  Livraison sous 3 semaines</p>
-                    </div>
-                </div>
-            </div>  
+   <div class="container my-5">
+    <form id="signup" class="form w-100 " name="formValidate">
+        <h1>Formulaire</h1>
+      
+        <div class="form-field">
+            <label for="name" class="form-label">Nom </label>
+       <input type="text" name="name" class="form-control" id="name" autocomplete="off">
+       <small></small>
+           </div>
+           <div class="form-field">
+            <label for="firstname" class="form-label">Prénom</label>
+       <input type="text" name="firstname" class="form-control" id="firstname" autocomplete="off">
+       <small></small>
+           </div>  
+           <div class="form-field">
+            <label for="adress" class="form-label">Adresse</label>
+       <input type="text" name="adress" class="form-control" id="adress" autocomplete="off">
+       <small></small>
+           </div>  
+           <div class="form-field">
+            <label for="town" class="form-label">Ville</label>
+       <input type="text" name="town" class="form-control" id="town" autocomplete="off">
+       <small></small>
+           </div>  
+           <div class="form-field">
+            <label for="email" class="form-label">Email:</label>
+       <input type="text" name="email" class="form-control" id="email" autocomplete="off">
+       <small></small>
+           </div>
+         
+           <div class="form-field">
+            <label for="password" class="form-label">Mot de passe</label>
+       <input type="password" name="password" class="form-control" id="password" autocomplete="off">
+       <span id="togglePassword" class="eye-icon">👁️</span>
+       <small></small>
+           </div>
+           <div class="form-field">
+            <label for="confirmpassword" class="form-label">Confirmer votre mot de passe</label>
+       <input type="password" name="confirmpassword" class="form-control" id="confirmpassword" autocomplete="off">
+       <small></small>
+           </div>
+           </div>
+        <div class="text-center mt-3">
+            <button type="submit" class="btn btn-primary">Valider</button>
         </div>
-        <div class="flex-start size80">
-            <a class="continuer" href="index.html">
-                <i class="fa-solid fa-chevron-left"></i> CONTINUER MES ACHATS
-            </a>
-        </div>
-        <div class="container my-5 ">
-            <form id="signup" class="form w-100 " name="formValidate">
-                <h1>Informations Personnelles</h1>
-                <div class="form-field">
-                    <label for="name" class="form-label">Nom </label>
-               <input type="text" name="name" class="form-control" id="name" autocomplete="off">
-               <small></small>
-                   </div>
-                   <div class="form-field">
-                    <label for="firstname" class="form-label">Prénom</label>
-               <input type="text" name="firstname" class="form-control" id="firstname" autocomplete="off">
-               <small></small>
-                   </div>  
-                   <div class="form-field">
-                    <label for="email" class="form-label">Email:</label>
-               <input type="text" name="email" class="form-control" id="email" autocomplete="off">
-               <small></small>
-                   </div>
-                   <div class="form-field">
-                    <label for="adress" class="form-label">Adresse</label>
-               <input type="text" name="adress" class="form-control" id="adress" autocomplete="off">
-               <small></small>
-                   </div>
-                   <div class="form-field">
-                    <label for="town" class="form-label">Ville</label>
-               <input type="text" name="town" class="form-control" id="town" autocomplete="off">
-               <small></small>
-                   </div>
-                   <div class="form-field">
-                    <label for="password" class="form-label">Mot de passe</label>
-               <input type="password" name="password" class="form-control" id="password" autocomplete="off">
-               <span id="togglePassword" class="eye-icon">👁️</span>
-               <small></small>
-                   </div>
-                   <div class="form-field">
-                    <label for="confirmpassword" class="form-label">Confirmer votre mot de passe</label>
-               <input type="password" name="confirmpassword" class="form-control" id="confirmpassword" autocomplete="off">
-               <small></small>
-                   </div>
-                <div class="text-center mt-3">
-                    <button type="submit" class="btn btn-primary">Commander</button>
-                </div>
-            </form>
-    
-        </div>
-    </section>
+    </form>
+
+</div>
+  </section>
 
     <footer>
         <section class="flex-column-centre">

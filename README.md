@@ -1,6 +1,7 @@
 Projet E-commerce de Meubles<br>
 
 Introduction
+
 Ce projet est un site web e-commerce qui propose une sélection de meubles en bois. Les utilisateurs peuvent naviguer à travers les produits disponibles, voir les détails de chaque meuble et les ajouter à leur panier d'achat.<br>
 
 Fonctionnalités<br>
@@ -16,6 +17,7 @@ HTML<br>
 CSS<bR>
 
 JavaScript<br>
+
 API RESTful (pour récupérer les données des meubles)
 Local Storage (pour stocker les produits dans le panier)
 Installation
@@ -33,6 +35,7 @@ Remplissez le formulaire de commande avec vos informations personnelles.
 Validez votre commande.<br>
 
 Crédits<br>
+
 Ce projet a été réalisé par Mpussa CAMARA dans le cadre d'un projet personnel ou académique. Les données des meubles sont fournies par une API virtuelle.
 
 le BackEnd n'a pas été réaliser par moi.

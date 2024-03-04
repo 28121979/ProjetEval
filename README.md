@@ -1,4 +1,4 @@
-Projet E-commerce de Meubles
+Projet E-commerce de Meubles<br>
 Introduction
 Ce projet est un site web e-commerce qui propose une sélection de meubles en bois. Les utilisateurs peuvent naviguer à travers les produits disponibles, voir les détails de chaque meuble et les ajouter à leur panier d'achat.
 

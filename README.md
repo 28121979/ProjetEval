@@ -18,7 +18,7 @@ CSS<bR>
 
 JavaScript<br>
 
-API RESTful (pour récupérer les données des meubles)
+API (pour récupérer les données des meubles)
 Local Storage (pour stocker les produits dans le panier)
 Installation
 Clonez ce dépôt sur votre machine locale.

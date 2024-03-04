@@ -8,8 +8,9 @@ Affichage des produits : Les utilisateurs peuvent voir une liste de meubles disp
 Sélection de vernis : Les utilisateurs peuvent choisir parmi une liste de vernis disponibles pour personnaliser leur meuble.
 Ajout au panier : Les utilisateurs peuvent ajouter des meubles à leur panier d'achat.
 Gestion du panier : Les utilisateurs peuvent voir les articles qu'ils ont ajoutés à leur panier, modifier les quantités et supprimer des articles.
-Validation du formulaire : Les utilisateurs doivent remplir un formulaire avec leurs informations personnelles pour finaliser leur commande. Le formulaire valide les entrées utilisateur telles que le nom, le prénom, l'adresse e-mail et le mot de passe.
+Validation du formulaire sécurisé : Les utilisateurs doivent remplir un formulaire avec leurs informations personnelles pour finaliser leur commande. Le formulaire valide les entrées utilisateur telles que le nom, le prénom, l'adresse e-mail et le mot de passe.
 Technologies Utilisées<br>
+
 HTML<br>
 
 CSS<bR>
